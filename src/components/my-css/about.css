@@ -1,0 +1,151 @@
+/* General styles for the About section */
+.about {
+  max-width: 1200px;
+  padding: 40px;
+  margin: 60px auto;
+  background-color: #f7f7f7;
+  border: 1px solid #ff69b4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Styling for the text section */
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-text h2 {
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.highlights {
+  list-style-type: none;
+  padding: 0;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #ff69b4;
+}
+
+/* Resume Button */
+.resume-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #e22766;
+}
+
+/* Styling for the image section */
+.about-img {
+  flex: 0 0 300px;
+  text-align: center;
+}
+
+.about-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Ensures the image covers the space without distorting */
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 20px;
+  }
+
+  .about-text {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-img {
+    width: 100%;
+    margin-top: 20px; /* Add space between text and image */
+  }
+
+  h2 {
+    font-size: 28px; /* Slightly smaller font size for smaller screens */
+  }
+
+  .about p {
+    font-size: 16px; /* Adjust text size for readability */
+  }
+
+  .resume-btn {
+    width: 100%; /* Make the button full width on smaller screens */
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  .about-text {
+    padding-right: 0;
+  }
+
+  .about-img img {
+    border-radius: 5px; /* Slightly smaller radius for smaller screens */
+  }
+
+  h2 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .about p {
+    font-size: 14px; /* Adjust text size for readability */
+  }
+
+  .resume-btn {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

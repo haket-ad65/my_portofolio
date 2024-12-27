@@ -1,0 +1,75 @@
+/* General header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for separation */
+}
+
+.logo img {
+  max-height: 55px;
+  width: auto;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+
+  .logo img {
+    max-height: 50px; /* Slightly smaller logo on medium screens */
+  }
+
+  nav ul {
+    gap: 15px; /* Reduce spacing between links */
+  }
+
+  nav ul li a {
+    font-size: 16px; /* Slightly smaller text for navigation links */
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .header {
+    padding: 10px; /* Reduce padding on very small screens */
+  }
+
+  .logo img {
+    max-height: 45px; /* Further reduce logo size */
+  }
+
+  nav ul {
+    gap: 10px; /* Further reduce gap between navigation items */
+  }
+
+  nav ul li a {
+    font-size: 14px; /* Smaller text for navigation links */
+  }
+}

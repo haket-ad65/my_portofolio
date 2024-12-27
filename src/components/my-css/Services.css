@@ -1,0 +1,37 @@
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background-color: #1a1a1a;
+}
+
+.service-card {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.service-card h2 {
+  font-size: 24px;
+  color: #ffdd57;
+}
+
+.service-card p {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .service-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

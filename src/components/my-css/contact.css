@@ -1,0 +1,113 @@
+/* General styles for the Contact section */
+.contact {
+  padding: 60px;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+.contact h2 {
+  font-size: 32px;
+  color: #ffdd57;
+  margin-bottom: 40px;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 40px;
+}
+
+/* Styling for the form */
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact form div {
+  margin-bottom: 20px;
+}
+
+.contact input, 
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact textarea {
+  resize: vertical; /* Allows the textarea to be resized vertically */
+  min-height: 100px
+}
+
+/* Submit Button */
+.contact .btn {
+  padding: 10px 20px;
+  background-color: #ffdd57;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+  background-color: #ffcc00;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact {
+    padding: 40px;
+  }
+
+  .contact h2 {
+    font-size: 28px; /* Adjusting the header font size on smaller screens */
+  }
+
+  .contact p {
+    font-size: 16px; /* Adjusting the paragraph font size */
+    margin-bottom: 30px;
+  }
+
+  .contact form {
+    padding: 20px;
+  }
+
+  .contact input, 
+  .contact textarea {
+    font-size: 14px; /* Adjusting font size inside input and textarea */
+  }
+
+  .contact .btn {
+    font-size: 14px; /* Smaller font size for the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact h2 {
+    font-size: 24px; /* Further reduce heading size */
+  }
+
+  .contact p {
+    font-size: 14px; /* Adjust text size for readability */
+    margin-bottom: 20px;
+  }
+
+  .contact .btn {
+    width: 100%; /* Make the button full-width on very small screens */
+    padding: 12px;
+  }
+}

@@ -1,0 +1,27 @@
+.work {
+    padding: 60px;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+  
+.work h2 {
+    font-size: 32px;
+    color: #ffdd57;
+    text-align: center;
+    margin-bottom: 40px;
+}
+  
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}  
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+      gap: 15px;
+    }
+}
+  

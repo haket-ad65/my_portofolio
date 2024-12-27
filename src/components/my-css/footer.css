@@ -1,0 +1,66 @@
+/* General styles for the Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+}
+  
+.footer p {
+    font-size: 14px;
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+  
+.footer .social-links {
+    margin-top: 10px;
+}
+  
+/* Styling for the social media links */
+.footer a {
+    color: #ffdd57;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px; /* Increase spacing between social icons */
+    transition: color 0.3s ease;
+}
+  
+.footer a:hover {
+    color: #ffcc00;
+}
+  
+  /* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer {
+      padding: 15px;
+    }
+  
+    .footer p {
+      font-size: 12px; /* Slightly smaller text on smaller screens */
+    }
+  
+    .footer a {
+      font-size: 14px; /* Smaller font size for links */
+      margin: 0 8px; /* Adjust link spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer p {
+      font-size: 12px; /* Keep text smaller on very small screens */
+    }
+  
+    .footer .social-links {
+      margin-top: 15px;
+    }
+  
+    .footer a {
+      font-size: 14px;
+      margin: 0 5px; /* Adjust link spacing for very small screens */
+    }
+}
+  

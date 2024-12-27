@@ -1,0 +1,105 @@
+/* General Hero Section Styles */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 80vh; /* Ensures the hero section has sufficient height */
+  position: relative;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #ffdd57;
+  margin-bottom: 20px;
+  font-family: 'Merriweather', serif; /* Use a serif font for a professional look */
+}
+
+.hero p {
+  font-size: 24px;
+  margin: 20px 0;
+  line-height: 1.5; /* Improve readability with line-height */
+}
+
+.hero .btn {
+  padding: 10px 20px;
+  background-color: #ffdd57;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.hero .btn:hover {
+  background-color: #ffcc00;
+  transform: scale(1.05); /* Slight hover animation */
+}
+
+.hero-image {
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for medium screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px;
+    min-height: 70vh; /* Adjust height for smaller screens */
+  }
+
+  .hero h1 {
+    font-size: 36px; /* Reduce font size for medium screens */
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+
+  .hero .btn {
+    padding: 12px 25px;
+    font-size: 20px;
+  }
+
+  .hero-image {
+    max-width: 300px; /* Adjust image size for smaller screens */
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 480px) {
+  .hero {
+    padding: 30px;
+    min-height: 60vh; /* Further reduce hero section height */
+  }
+
+  .hero h1 {
+    font-size: 28px; /* Further reduce heading size */
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+
+  .hero-image {
+    max-width: 250px; /* Further reduce image size for small screens */
+  }
+}
